@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+#results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.result {
+    width: 200pt;
+    flex-grow: 1;
+    flex-basis: 1;
+    background-color: white;
+    padding: 10pt;
+    margin: 3pt;
+    border: 0.5px solid gray;
+    box-shadow: 0px 4px 15px -14px rgba(0,0,0,0.75);
+    border-radius: 3pt;
+}
+
+.result:hover {
+    background-color: rgb(162, 212, 232);
+}
+
+.result h1 {
+    margin: 6pt 0 2pt 0;
+    font-size: 11pt;
+    color: darkred;
+}
+
+.result address {
+    color: gray;
+    overflow: hidden;
+    font-style: normal;
+    font-size: 80%;
+}
+
+.result img {
+    object-fit: contain;
+    width: 30pt;
+    height: 30pt;
+    float: right;
+}
