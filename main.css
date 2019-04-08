@@ -1,0 +1,19 @@
+body {
+    background-color: #2D6181;
+    background-image: url(vikram.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-size: 50vmax;
+}
+
+h1 {
+    font-family: -apple-system, Roboto, 'Helvetica Neue', sans-serif;
+    font-size: 25vw;
+    font-weight: 400;
+    line-height: 80%;
+    width: 50%;
+    color: #fff;
+    padding: 20pt;
+}
