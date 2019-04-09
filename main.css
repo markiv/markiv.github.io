@@ -1,11 +1,11 @@
 body {
     background-color: #2D6181;
-    background-image: url(vikram.svg);
+    background-image: url(vikram.svg), linear-gradient(#084368, #4781A5);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-y: bottom;
     background-position-x: right;
-    background-size: 50vw;
+    background-size: 50vw, 100% 100%;
 }
 
 h1 {
