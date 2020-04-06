@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Contovista Result 1",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "confidence": 0.75,
+    "provider": "Contovista",
+    "url": "banking://contovista/overview"
+  },
+  {
+    "title": "Contovista Result 1",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "confidence": 0.9,
+    "provider": "Contovista",
+    "url": "banking://contovista/overview"
+  }
+]
