@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bithof</title>
+    <meta name="Author" content="Vikram Kriplaney" />
+    <style>
+      body {
+        background-color: black;
+        background-image: url("logo.svg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-y: center;
+        background-position-x: center;
+        background-size: 50%;
+        color: white;
+        font: 10pt sans-serif;
+      }
+      #footer {
+        position: fixed;
+        left: 0px;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function onLoad() {
+        var hostname = window.location.hostname;
+        if (hostname.length > 0) {
+          document.getElementById("hostname").innerText = hostname;
+          document.title = hostname;
+        }
+      }
+    </script>
+  </head>
+  <body onload="onLoad()">
+    <div id="footer">
+      <div id="hostname">bithof</div>
+      <div style="color: darkgrey;">Coming soon.</div>
+    </div>
+  </body>
+</html>
