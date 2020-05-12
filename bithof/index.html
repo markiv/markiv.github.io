@@ -27,10 +27,14 @@
     </style>
     <script>
       function onLoad() {
-        var hostname = window.location.hostname;
-        if (hostname.indexOf("bithof") > 0) {
-          document.getElementById("hostname").innerText = hostname;
-          document.title = hostname;
+        for (domain in ["bithof.ch", "bithof.net", "bithof.com"]) {
+          if (
+            window.location.hostname.indexOf(domain) > 0 ||
+            document.referrer.indexOf(domain) > 0
+          ) {
+            document.getElementById("hostname").innerText = domain;
+            break;
+          }
         }
       }
     </script>
@@ -38,7 +42,7 @@
   <body onload="onLoad()">
     <div id="footer">
       <div id="hostname">bithof</div>
-      <div style="color: darkgrey;">Coming soon.</div>
+      <div style="color: darkgrey;">is coming soon.</div>
     </div>
   </body>
 </html>
