@@ -28,7 +28,7 @@
     <script>
       function onLoad() {
         var hostname = window.location.hostname;
-        if (hostname.length > 0) {
+        if (hostname.indexOf("bithof") > 0) {
           document.getElementById("hostname").innerText = hostname;
           document.title = hostname;
         }
