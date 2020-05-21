@@ -9,22 +9,8 @@
     <link rel="icon" type="image/png" href="favicon-16.png" sizes="16x16" />
     <link rel="mask-icon" href="favicon.svg" color="#ffffff" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png" />
-    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css" />
 
     <style>
-      * {
-        font-family: "Fira Sans", sans-serif;
-      }
-      .bold {
-        font-weight: bold;
-      }
-      .italic {
-        font-style: italic;
-      }
-      .oblique {
-        font-style: oblique;
-      }
-
       body {
         background-color: black;
         background-image: url("logo.svg"), url("background.svg");
@@ -45,6 +31,7 @@
       }
       .social {
         vertical-align: middle;
+        font-size: 14pt;
       }
       .social img {
         height: 20pt;
@@ -53,32 +40,20 @@
       }
       .social a {
         color: white;
+        text-decoration: none;
       }
     </style>
-    <script>
-      function onLoad() {
-        for (domain in ["bithof.ch", "bithof.net", "bithof.com"]) {
-          if (
-            window.location.hostname.indexOf(domain) > 0 ||
-            document.referrer.indexOf(domain) > 0
-          ) {
-            document.getElementById("hostname").innerText = domain;
-            break;
-          }
-        }
-      }
-    </script>
   </head>
-  <body onload="onLoad()">
+  <body>
     <div id="footer">
       <div class="social">
         <a href="https://instagram.com/impactduty"
-          ><img src="instagram_color.svg" />@impactduty</a
+          ><img src="instagram_color.svg" /> @impactduty</a
         >
       </div>
       <div class="social">
         <a href="https://twitter.com/impactduty">
-          <img src="twitter.svg" />@impactduty</a
+          <img src="twitter.svg" /> @impactduty</a
         >
       </div>
     </div>
