@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bithof</title>
+    <title>impactduty.com</title>
     <meta name="Author" content="Vikram Kriplaney" />
     <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16.png" sizes="16x16" />
@@ -27,12 +27,12 @@
 
       body {
         background-color: black;
-        background-image: url("logo.svg");
+        background-image: url("logo.svg"), url("background.svg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position-y: center;
         background-position-x: center;
-        background-size: 50%;
+        background-size: 50%, cover;
         color: white;
         font: 10pt sans-serif;
       }
@@ -43,8 +43,16 @@
         width: 100%;
         text-align: center;
       }
-      #hostname {
-        font-weight: 900;
+      .social {
+        vertical-align: middle;
+      }
+      .social img {
+        height: 20pt;
+        padding: 2pt;
+        vertical-align: middle;
+      }
+      .social a {
+        color: white;
       }
     </style>
     <script>
@@ -63,8 +71,16 @@
   </head>
   <body onload="onLoad()">
     <div id="footer">
-      <div id="hostname">bithof</div>
-      <div style="color: darkgrey;">is coming soon.</div>
+      <div class="social">
+        <a href="https://instagram.com/impactduty"
+          ><img src="instagram_color.svg" />@impactduty</a
+        >
+      </div>
+      <div class="social">
+        <a href="https://twitter.com/impactduty">
+          <img src="twitter.svg" />@impactduty</a
+        >
+      </div>
     </div>
   </body>
 </html>
