@@ -16,7 +16,7 @@
         background-image: url("logo.svg"), url("background.svg");
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position-y: center;
+        background-position-y: 40%;
         background-position-x: center;
         background-size: 50%, cover;
         color: white;
@@ -37,16 +37,25 @@
         padding: 2pt;
         margin-right: 5%;
         flex-grow: 3;
+        filter: drop-shadow(0 1pt 2pt black);
       }
       .social img {
-        height: 20pt;
+        height: 22pt;
         max-width: 120pt;
-        padding: 2pt;
+        margin: 2pt;
+        padding-right: 3pt;
         vertical-align: middle;
       }
       .social a {
         color: orange;
         text-decoration: none;
+      }
+      .social :hover,
+      .social :active {
+        transform: translate(0, -2pt) scale(1.1) perspective(50px)
+          rotateX(10deg) rotateY(2deg);
+        transition: all 0.3s ease-in-out;
+        text-decoration: underline white;
       }
     </style>
   </head>
@@ -55,12 +64,12 @@
       <div class="social">Follow us on:</div>
       <div class="social">
         <a href="https://instagram.com/impactduty"
-          ><img src="instagram_color.svg" /> @impactduty</a
+          ><img src="instagram.svg" />@impactduty</a
         >
       </div>
       <div class="social">
         <a href="https://twitter.com/impactduty">
-          <img src="twitter.svg" /> @impactduty</a
+          <img src="twitter.svg" />@impactduty</a
         >
       </div>
       <div class="social">
