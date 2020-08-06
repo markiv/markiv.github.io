@@ -14,12 +14,15 @@ struct Blog: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://your-website-url.com")!
-    var name = "Blog"
-    var description = "A description of Blog"
-    var language: Language { .english }
+    let url = URL(string: "https://markiv.github.io")!
+    let name = "Swifterland"
+    let description = "My musings on Swift, iOS, SwiftUI and all things related."
+    let language = Language.english
     var imagePath: Path? { nil }
 }
 
 // This will generate your website using the built-in Foundation theme:
-try Blog().publish(withTheme: .foundation)
+try Blog().publish(
+    withTheme: .foundation,
+    deployedUsing: .gitHub("markiv/markiv.github.io", useSSH: true)
+)
